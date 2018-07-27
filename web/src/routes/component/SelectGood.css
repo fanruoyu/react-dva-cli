@@ -1,0 +1,46 @@
+.input{
+    width: 200px;
+    position: relative;
+    top: 1px;
+    margin-right: 20px;
+}
+.row{
+    padding: 10px 5px 0;
+    display: flex;
+}
+.row b{
+    width: 50px;
+}
+.row label{
+    width: 60px;
+}
+table{
+    margin-top: 10px;
+}
+.ats>span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.ats>span:nth-child(1){
+    background: #FF3300;
+}
+.ats>span:nth-child(2){
+    background: #FFFF00;
+}
+.ats>span:nth-child(3){
+    background: #009900;
+}
+.add{
+    color: #F05249;
+    cursor: pointer;
+}
+.table{
+    height: 335px !important;
+}
+.icon{
+    position: relative;
+    top: 1px;
+}

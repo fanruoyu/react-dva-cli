@@ -1,0 +1,130 @@
+.tab td, .tabs td{
+    text-align: center;
+    font-size: 13px;
+}
+.tab tr td:nth-child(2), .tabs tr td:nth-child(1){
+    display: flex;
+}
+.tab th, .tabs th{
+    background: #fff !important;
+    border-bottom: 1px solid #eee !important;
+    border-top: 3px solid #eee !important;
+    text-align: center!important;
+}
+.tab .ant-table-selection-column, .tabs .ant-table-selection-column{
+    width: 100px !important;
+}
+.tabs th:last-child{
+    text-align: left !important;
+}
+.dl{
+    display: flex;
+}
+.dl dt{
+    width: 79px;
+    height: 79px;
+}
+.dl dd{
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.flex{
+    height: 54px;
+    line-height: 54px;
+    background: #eee;
+    font-size: 14px;
+    padding: 0 0 0 24px;
+}
+.seleted{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.b{
+    color: #F05249;
+}
+.numberDisable{
+    background: #ddd!important;
+}
+.number p{
+    cursor: pointer;
+    line-height: 28px;
+    display: inline-block;
+    padding-top: 5 !important;
+}
+.numberInput{
+    width: 80px;
+    text-align: center;
+    margin: 0 15px;
+}
+.all{
+    position: absolute;
+    top: 60px;
+    left: 105px;
+    z-index: 8;
+    font-weight: 800;
+}
+.disabled{
+    background: #f1f1f1 !important;
+}
+.mask>p{
+    height: 100%;
+    width: 100%;
+    background: #ccc;
+    opacity: .3;
+    border-radius: 50%;
+}
+.mask{
+    position: relative;
+}
+.offshelf{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: #333;
+    font-weight: 800;
+}
+.emptyCart{
+    background: #fff;
+    height: 150px;
+    position: relative;
+    top: -51px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emptyCartBtn{
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.btnWrap{
+    width: 80px;
+    height: 35px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+.ats>span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.ats>span:nth-child(1){
+    background: #FF3300;
+}
+.ats>span:nth-child(2){
+    background: #FFFF00;
+}
+.ats>span:nth-child(3){
+    background: #009900;
+}

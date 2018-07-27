@@ -1,0 +1,30 @@
+{
+  "entry": "src/index.js",
+  "publicPath": "/",
+  "theme": {
+    "@primary-color": "#F05249",
+    "@link-color": "#F05249"
+  },
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
+      ]
+    }
+  },
+  "proxy": {
+    "/orderEntry": {
+      "target": "https://api-dev.unifiedcloud.lenovo.com/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/orderEntry" : "" }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.header{
+    line-height: 50px;
+    border-bottom: 1px solid #333;
+}
+.confirm{
+    padding: 15px 0 0;
+    display: flex;
+}
+.confirm input{
+    width: 300px;
+    border: 1px solid #ccc;
+    line-height: 28px;
+    border-radius: 5px;
+}
+.result>*,.confirm>*{
+    flex: 1;
+}
+.confirm>*>span{
+    display: inline-block;
+    font-weight: 800;
+}
+.confirm>*>p{
+    display: inline-block;
+}
+.confirm>*>div>span:nth-child(1), .confirm>*>div>div>span:nth-child(1){
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+}
+.confirm>*>span{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+.date{
+    display: flex;
+   align-items: center;
+}
+.billDiv>div{
+    margin-bottom: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.btn>button{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #F05249;
+    cursor: pointer;
+    background: #fff;
+    color: #F05249;
+    font-size: 14px;
+    outline: none;
+}
+.btn>.agree{
+    background:#F05249;
+    color:  #fff; 
+}
+.btn>button:nth-child(2){
+    margin:0 50px;
+}
+.title{
+    font-weight: 800;
+    margin-top: 15px;
+    border-bottom: 3px solid #eee;
+    font-size: 14px;
+    line-height: 30px;
+}
+.result{
+    display: flex;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.right{
+    text-align: right;
+}
+.search{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 80px;
+    text-align: center;
+    background: #fff;
+    margin-left: 15px;
+    cursor: pointer;
+}
+th{
+    background: #f8f8f8 !important;
+    text-align: center !important;
+}
+td{
+    text-align: center;
+}
+.bill{
+    padding: 3px 5px;
+    display: inline-block;
+    width: 330px;
+}
+.addressP>*{
+    float: left;
+}
+.addressP>p{
+    width: 70%;
+}

@@ -1,0 +1,40 @@
+.textarea{
+    resize: none;
+    width: 90px;
+    padding: 3px;
+    border-color: '#ccc';
+    border-radius: 3px;
+    overflow-y: hidden;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48px;
+}
+.vertical>div{
+    display: flex;
+    justify-content: space-around;
+}
+.vertical i{
+    cursor: pointer;
+    font-size: 16px;
+}
+.remarks{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+    min-height: 30px;
+    max-height: 75px;
+    overflow: hidden;
+    text-align: left;
+}
+.check:hover{
+    color: #FF3300;
+}
+.close:hover{
+    color: #ccc;
+}
+.upload *{
+    max-width: 115px !important;
+}
