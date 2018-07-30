@@ -1,0 +1,37 @@
+{
+  "entry": "src/index.js",
+  "publicPath": "/",
+  "theme": {
+    "@primary-color": "#F05249",
+    "@link-color": "#F05249"
+  },
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
+      ]
+    }
+  },
+  "proxy": {
+    "/user": {
+      "target": "http://image.baidu.com/",
+      "changeOrigin": true
+    },
+    "/data":{
+     "target": "http://music.taihe.com/",
+      "changeOrigin": true
+    },
+    "/boot":{
+      "target": "http://114.112.96.62:8080/",
+       "changeOrigin": true
+     }
+  }
+}

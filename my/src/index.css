@@ -1,0 +1,21 @@
+
+html, body, :global(#root) {
+  height: 100%;
+  font-family: 'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+}
+img {
+	border: 0;
+}
+th {
+  background-color: #DEE1ED !important;
+  font-weight: 600 !important;
+}
+.ant-modal-footer{
+  text-align: center !important;
+}
+.ant-spin-nested-loading>.ant-spin-blur:after{
+  opacity: .95 !important;
+}
+.ant-select-dropdown{
+  max-width: 150px !important;
+}
