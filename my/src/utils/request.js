@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import fetch from 'dva/fetch';
 import FileSaver from 'file-saver';
+import API_PREFIX from './Constants';
 
 function parseJSON(response) {
   return response.json();
@@ -25,37 +26,37 @@ function checkStatus(response) {
  * @return {object}           An object containing either "data" or "err"
  */
 
-export default function request(url, options) {
+export default function request(url, options, apiPrefix = API_PREFIX) {
   const fetchOptions = {
     credentials: 'same-origin',
     ...options,
   };
-  const fetchUrl = `${url}`;
+  const fetchUrl = `${apiPrefix}${url}`;
   return fetch(fetchUrl, fetchOptions).then(checkStatus).then(parseJSON).then((data) => {
     return ({
       data,
     });
   })
-  .catch((err) => {
-    throw err;
-  });
+    .catch((err) => {
+      throw err;
+    });
 }
 
-export function requestBlob(url, options) {
+export function requestBlob(url, options, apiPrefix = API_PREFIX) {
   const fetchOptions = {
     credentials: 'same-origin',
     ...options,
   };
-  const fetchUrl = `${url}`;
+  const fetchUrl = `${apiPrefix}${url}`;
   return fetch(fetchUrl, fetchOptions).then(checkStatus)
-  .then(response => response.blob()).then((data) => {
-    const blob = new Blob([data]);
-    FileSaver.saveAs(blob, options.fileName);
-    return blob;
-  })
-  .catch((err) => {
-    throw err;
-  });
+    .then(response => response.blob()).then((data) => {
+      const blob = new Blob([data]);
+      FileSaver.saveAs(blob, options.fileName);
+      return blob;
+    })
+    .catch((err) => {
+      throw err;
+    });
 }
 
 export const delay = time => new Promise(resolve => setTimeout(resolve, time));

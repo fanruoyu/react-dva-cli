@@ -8,13 +8,13 @@ import { headersPost, headersGet } from '../utils/Constants';
 //   });
 // }
 // export async function getLoginMsg() {
-//   return request('/data/69xiu/list/?page=0&size=5', {
+//   return request('/69xiu/list/?page=0&size=5', {
 //     method: 'get',
 //     headers: headersGet,
 //   });
 // }
 export async function getLoginMsg(params) {
-  return request('/boot/admin/login.json', {
+  return request('/admin/login.json', {
     method: 'post',
     headers: headersPost,
     body: JSON.stringify(params),

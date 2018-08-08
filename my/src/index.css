@@ -1,7 +1,9 @@
-
 html, body, :global(#root) {
   height: 100%;
+  width: 100%;
   font-family: 'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+  boxSizing: 'border-box';
+  overflow: hidden;
 }
 img {
 	border: 0;

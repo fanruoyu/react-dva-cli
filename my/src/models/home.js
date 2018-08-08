@@ -1,5 +1,5 @@
-import { notifyError } from '../services/app.js';
-import { getLoginMsg, } from '../services/home';
+import { notifyError, notifySuccess } from '../services/app.js';
+import { getLoginMsg } from '../services/home';
 
 export default {
   namespace: 'home',
@@ -8,16 +8,18 @@ export default {
     password: '',
   },
   effects: {
-    *saveUserMsg({ payload }, { call, put }) {
+    *saveUserMsg({ payload, callback }, { call, put }) {
       // const { data } = yield call(getCart, payload);
+      callback && callback();
       yield put({
         type: 'changeUserMsg',
         payload: { ...payload },
       });
     },
-    *saveLoginMsg({ payload }, { call, put }) {
+    *saveLoginMsg({ payload, callback }, { call, put }) {
       const { data } = yield call(getLoginMsg, payload);
       console.log(data, '============');
+      callback && callback();
       yield put({
         type: 'changeLoginMsg',
         payload: data,

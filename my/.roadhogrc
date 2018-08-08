@@ -1,8 +1,9 @@
 {
   "entry": "src/index.js",
   "publicPath": "/",
+  "disableCSSModules": true,
   "theme": {
-    "@primary-color": "#F05249",
+    "@primary-color": "#168fff",
     "@link-color": "#F05249"
   },
   "env": {
